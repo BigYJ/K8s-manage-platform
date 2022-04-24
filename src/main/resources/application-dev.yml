@@ -1,0 +1,17 @@
+# 应用名称
+spring:
+  application:
+    name: netty-proxy
+# 应用服务 WEB 访问端口
+
+server:
+  port: 8080
+  serverIp: 10.1.1.2
+  #netty服务网关端口
+  serverPort: 8888
+  backendIp: 10.1.1.1
+  #远程被代理服务端口
+  backendPort: 80
+  receiveBuffer: 10240
+  sendBuffer: 10240
+  maxContentLength: 2000000
